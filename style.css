@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Baloo+Da+2:wght@600&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+nav{
+    background-color: rgb(20, 20, 133);
+    color: white;
+    height: 100px;
+    font-size: 27px;
+    font-family: 'Ballet', cursive;
+}
+nav ul{
+    list-style-type: none;
+}
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+    margin-top: 50x;
+}
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,7vw);
+    grid-template-rows: repeat(3,7vw);
+    font-family: 'Baloo Da 2', cursive;
+}
+.box{
+    border: 2px solid black;
+    font-size: 4vw;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(222, 239, 233);
+}
+.gameinfo{
+    padding:0 12px;
+    font-family: 'Ballet', cursive;
+    font-family: 'Baloo Da 2', cursive;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 15px 15px;
+    padding: 8px 30px;
+    background-color: #e6d0c0;
+    border-radius: 15px;
+}
+.line{
+    background-color: black;
+    width: 0;
+    height:3px;
+    transition: width 1s ease-in;
+    position: absolute; 
+}
